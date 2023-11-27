@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CaseApis">
+    <listeners>
+        <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
+    </listeners>
+    <test name="CaseAPI V1">
+        <classes>
+            <class name="caseApi.externalCase.TestCaseApiV1"/>
+           <class name="caseApi.externalCase.TestCaseFilterAPIs"/>
+            <class name="caseApi.internalCase.TestInternalCases"/>
+        </classes>
+    </test>
+ <test name="Case Groups">
+        <classes>
+            <class name="caseGroups.TestCaseGroupV1"/>
+        </classes>
+    </test>
+    <test name="Escalations Api">
+        <classes>
+            <class name="escalationsAPI.TestEscalationsAPIV1"/>
+        </classes>
+    </test>
+    <test name="Accounts,User and Contact Apis">
+        <classes>
+            <class name="testApis.TestAccountsV1Api"/>
+            <class name="testApis.TestBusinessHoursApi"/>
+            <class name="testApis.TestContactApis"/>
+            <class name="testApis.TestUserApis"/>
+            <class name="testApis.TestAccountsInternalApi"/>
+            <class name="testApis.TestUsersInternal"/>
+            <class name="testApis.TestContactInternalApis"/>
+        </classes>
+    </test>
+    <test name="Metadata Apis">
+        <classes>
+            <class name="metadata.caseMetadataV1Apis"/>
+            <class name="metadata.caseEntitlementV1Apis"/>
+            <class name="metadata.CaseMetadataInternalApis"/>
+        </classes>
+    </test>
+</suite>
